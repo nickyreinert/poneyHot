@@ -1,0 +1,64 @@
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  backdrop-filter: blur(5px); /* Blurred background */
+  color: #000; /* Enforce font color */
+  font-family: Arial, sans-serif; /* Enforce font family */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 0px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  color: #000; /* Enforce font color */
+  background-color: #fff; /* Enforce background color */
+  position: relative; /* Add this line */
+}
+
+#modal-header {
+  padding: 0 20px;
+  width: 100%; /* Ensure header spans the whole width */
+  position: relative; /* Add this line */
+  height: 40px; /* Set a fixed height for the header */
+  background-color: #eee;
+  border-bottom: 1px solid #aaa;
+
+}
+
+#modal-body {
+  padding: 20px 20px;
+}
+
+#modal-body a {
+  color: #f00;
+}
+
+#modal-body a:hover {
+  text-decoration: underline;
+}
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 20px; /* Adjust to stick to the right */
+  color: #f00;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
